@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #e7f0c3, #92a8d1, #f4d7d1); /* Mixed light colors */
+            color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 60%;
+            background: linear-gradient(45deg, #f7bb97, #f4d7d1); /* Light gradient color with added color */
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styles */
+        .header-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3);
+            color: #000; /* Updated Teja Chamakuri color to black */
+        }
+
+        /* Navigation Styles */
+        .nav-menu {
+            margin-top: 1.5rem;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000; /* Icon color - changed to black */
+            background: rgba(255, 255, 255, 0.7); /* Navigation link background */
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        .nav-link i {
+            font-size: 1.3rem;
+            color: #000; /* Updated icon color to black */
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .email-text {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: #000; /* Updated email text color */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1 class="header-text">Teja Chamakuri</h1>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="about me.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i></a></li>
+                    <li><a href="project.html" class="nav-link"><i class="fas fa-project-diagram"></i></a></li>
+                    <li><a href="certifications.html" class="nav-link"><i class="fas fa-award"></i></a></li>
+                </ul>
+            </nav>
+            <p class="email-text">tejach312@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

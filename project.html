@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e2f3fa; /* Updated background color */
+            padding: 2rem;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #003366; /* Navy Blue */
+            font-style: italic; /* Added italic style to the title */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            min-height: 200px;
+            perspective: 1000px;
+            margin: 1rem;
+            transition: transform 0.5s;
+        }
+
+        .card-inner {
+            width: 100%;
+            min-height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .front {
+            transform: rotateY(0deg);
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #003366; /* Navy Blue */
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <div class="card-title">Vehicle Number Plate Detection</div>
+                </div>
+                <div class="card-face back">
+                    <div class="card-title">Vehicle Number Plate Detection</div>
+                    <div class="card-description">
+                        Designed and implemented a robust vehicle number plate detection system using a multi-stage approach, integrating computer vision techniques and image processing methodologies.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <div class="card-title">Power Quality Improvement</div>
+                </div>
+                <div class="card-face back">
+                    <div class="card-title">Power Quality Improvement</div>
+                    <div class="card-description">
+                        Led a power quality management project, focusing on harmonics reduction in electric power systems. Implemented a shunt hybrid power filter with advanced d-q and p-q control techniques, integrating an adaptive neuro-fuzzy inference system (ANFIS) for precise real power loss estimation. Successfully enhanced power quality by selectively eliminating harmonics, ensuring optimal performance of consumer equipment at the point of common coupling (PCC).
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <div class="card-title">Sound To Electric Energy Converter</div>
+                </div>
+                <div class="card-face back">
+                    <div class="card-title">Sound To Electric Energy Converter</div>
+                    <div class="card-description">
+                        Designed an eco-friendly energy solution, repurposing wasted sound energy into usable power. Utilized piezoelectric microphones to capture air compressions, converting them into electric energy through a simple quadrupling circuit. This portable technology allows for immediate use or energy storage, presenting a sustainable approach to power generation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

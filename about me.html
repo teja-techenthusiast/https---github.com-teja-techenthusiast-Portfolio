@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3498db; /* Updated color for better visibility */
+            font-weight: bold;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #ecf0f1;
+            font-weight: bold;
+            font-style: italic; /* Italic for "Tech Enthusiast" */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+
+        .linkedin-link {
+            color: #0077b5;
+        }
+
+        .linkedin-link:hover {
+            color: #005b8e;
+        }
+
+        .github-link {
+            color: #333;
+        }
+
+        .github-link:hover {
+            color: #24292e;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="name">Chamakuri Teja</div>
+        <div class="bio">Tech Enthusiast</div>
+
+        <p>As a recent graduate and passionate technology enthusiast, I am eager to kickstart my career in software development.
+            I bring a versatile skill set, with proficiency in Python, C, AIML, HTML, SQL, DBMS, and DSA, allowing me to tackle challenges from multiple angles.
+        </p>
+
+        <p>I'm a passionate individual with a keen interest in technology. Always eager to learn and explore new possibilities. Let's connect and build something amazing!</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/chamakuri-teja/" target="_blank" class="social-link linkedin-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/teja-techenthusiast" target="_blank" class="social-link github-link"><i class="fab fa-github"></i></a>
+            <!-- Add more social links as needed -->
+        </div>
+    </div>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+
+</html>
